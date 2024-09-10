@@ -1,6 +1,7 @@
 {
   "name": "@sarast/vue-draggable",
   "version": "0.0.0",
+  "packageManager": "pnpm@9.10.0",
   "description": "Vue Drag-and-Drop Component",
   "type": "module",
   "keywords": [
