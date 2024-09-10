@@ -8,7 +8,7 @@
     "vue3.x",
     "Sortable",
     "sortablejs",
-    "vue-draggable"
+    "draggable"
   ],
   "license": "MIT",
   "homepage": "https://github.com/sardor01/vue-draggable#readme",
@@ -48,7 +48,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "lint:fix": "pnpm run lint --fix",
-    "release": "bumpp && pnpm publish"
+    "release": "bumpp && pnpm publish",
+    "prepublishOnly": "pnpm run build"
   },
   "peerDependencies": {
     "@types/sortablejs": "^1.15.0"
