@@ -21,8 +21,6 @@
     "url": "git+https://github.com/sardor01/vue-draggable.git"
   },
   "files": [
-    "LICENSE",
-    "README.md",
     "dist"
   ],
   "main": "./dist/vue-draggable.umd.cjs",
@@ -41,7 +39,6 @@
       "default": "./dist/vue-draggable.umd.cjs"
     }
   },
-  "sideEffects": false,
   "publishConfig": {
     "access": "public"
   },
@@ -61,6 +58,7 @@
   "devDependencies": {
     "@sarast/eslint-config": "1.1.3",
     "@sarast/prettier-config": "1.0.0",
+    "@types/node": "22.5.4",
     "@vitejs/plugin-vue": "5.1.3",
     "bumpp": "9.5.2",
     "eslint": "9.10.0",

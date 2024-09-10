@@ -1,18 +1,19 @@
 {
   "compilerOptions": {
-    "target": "ES2022",
+    "target": "es2022",
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
     "experimentalDecorators": true,
     "baseUrl": "./",
     "rootDir": ".",
-    "module": "ES2022",
+    "module": "es2022",
     "moduleResolution": "node",
     "paths": {
       "@/*": ["src/*"],
       "vue-draggable": ["src/index.ts"]
     },
     "resolveJsonModule": true,
+    "types": ["node"],
     "allowJs": false,
     "strictNullChecks": true,
     "noImplicitAny": true,
