@@ -1,0 +1,77 @@
+{
+  "name": "@sarast/vue-draggable",
+  "version": "0.0.0",
+  "description": "Vue Drag-and-Drop Component",
+  "type": "module",
+  "keywords": [
+    "vue",
+    "vue3.x",
+    "Sortable",
+    "sortablejs",
+    "vue-draggable"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sardor01/vue-draggable#readme",
+  "bugs": {
+    "url": "https://github.com/sardor01/vue-draggable/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sardor01/vue-draggable.git"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "dist"
+  ],
+  "main": "./dist/vue-draggable.umd.cjs",
+  "module": "./dist/vue-draggable.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/vue-draggable.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/vue-draggable.js"
+      },
+      "default": "./dist/vue-draggable.umd.cjs"
+    }
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint .",
+    "lint:fix": "pnpm run lint --fix",
+    "release": "bumpp && pnpm publish"
+  },
+  "peerDependencies": {
+    "@types/sortablejs": "^1.15.0"
+  },
+  "dependencies": {
+    "@types/sortablejs": "^1.15.8"
+  },
+  "devDependencies": {
+    "@sarast/eslint-config": "1.1.3",
+    "@sarast/prettier-config": "1.0.0",
+    "@vitejs/plugin-vue": "5.1.3",
+    "bumpp": "9.5.2",
+    "eslint": "9.10.0",
+    "fs-extra": "11.2.0",
+    "prettier": "3.3.3",
+    "sortablejs": "1.15.3",
+    "typescript": "5.5.4",
+    "vite": "5.4.3",
+    "vite-plugin-dts": "4.2.1",
+    "vue": "3.5.4"
+  },
+  "engines": {
+    "node": "^18.18.0 || >=20.0.0"
+  },
+  "prettier": "@sarast/prettier-config"
+}
